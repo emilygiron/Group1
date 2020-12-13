@@ -28,7 +28,7 @@ This game requires you to guess a three digit number. The game will continue unt
 - If you are unable to run the game make sure you have python downloaded
 
 # :space_invader: Technologies Used :space_invader:
-- HTMl
+- HTML
 - Python
 
 
