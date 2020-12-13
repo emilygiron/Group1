@@ -1,9 +1,9 @@
-# :page_with_curl: Project title :page_with_curl: 
- **Mastermind Game** 
+# :page_with_curl: Project title: Mastermind Game :page_with_curl: 
+  
 
 <!-- Team -->
-# :blue_heart: Team Name :blue_heart:
-   **MEES**
+# :blue_heart: Team Name: MEES :blue_heart:
+  
 
 <!--Description -->
 # :mag_right: Description :mag:
