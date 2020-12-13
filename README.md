@@ -1,10 +1,9 @@
 # :page_with_curl: Project title :page_with_curl: 
-
-   Mastermind Game
+ **Mastermind Game** 
 
 <!-- Team -->
 # :blue_heart: Team Name :blue_heart:
-   MEES
+   **MEES**
 
 <!--Description -->
 # :mag_right: Description :mag:
@@ -26,6 +25,7 @@ This game requires you to guess a three digit number. The game will continue unt
 - Click on the green button located in the upper right corner
 - Click download the file
 - Run file 
+- If you are unable to run the game make sure you have python downloaded
 
 # :space_invader: Technologies Used :space_invader:
 - HTMl
