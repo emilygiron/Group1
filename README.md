@@ -1,4 +1,4 @@
-# :page_with_curl: Project title: Mastermind Game :page_with_curl: 
+# :page_with_curl: Project Title: Mastermind Game :page_with_curl: 
   
 
 <!-- Team -->
