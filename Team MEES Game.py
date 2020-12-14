@@ -9,6 +9,7 @@ def check_num(number):
     while(number < 100 or number > 1000):
         print("\nYou did not enter a 3 digit number, please enter a 3 digit number")
         number = int(input("Guess the number: "))
+    return number
 
 
 import random 
@@ -33,11 +34,7 @@ while True:
         # while loop repeats as long as the  
         # Player fails to guess the number correctly. 
         while (n != num):   
-            # variable increments every time the loop 
-            # is executed, giving an idea of how many 
-            # guesses were made. 
             ctr += 1  
-      
             count = 0
       
             # explicit type conversion of an integer to 
@@ -50,7 +47,7 @@ while True:
             # correct[] list stores digits which are correct 
             correct = ['X']*3
       
-            # for loop runs 4 times since the number has 4 digits. 
+             
             for i in range(0, 3):  
       
                  # checking for equality of digits 
@@ -71,13 +68,13 @@ while True:
                 print('\n') 
                 print('\n') 
                 n = int(input("Enter your next choice of numbers: ")) 
-                check_num(n)
+                n = check_num(n)
                 
             # when none of the digits are guessed correctly. 
             elif (count == 0):   
                 print("None of the numbers in your input match.") 
                 n = int(input("Enter your next choice of numbers: "))
-                check_num(n)
+                n = check_num(n)
       
         # condition for equality. 
         if n == num:   
