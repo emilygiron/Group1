@@ -11,7 +11,6 @@ def check_num(number):
         number = int(input("Guess the number: "))
     return number
 
-
 import random 
 
 while True:
@@ -20,10 +19,21 @@ while True:
     
     num = random.randrange(100, 1000)   
       
-    n = int(input("I'm thinking of a 3 digit number... Guess the number: ")) 
-    check_num(n)
-     
-    
+    n = input("I'm thinking of a 3 digit number... Guess the number: ")
+   
+    #checking to see if there is a letter in string
+    if n.isnumeric():
+        n = int(n)
+        n = check_num(n)
+    else:
+       while(n.isnumeric() == False):
+            print("You did not enter a 3 digit number try again")
+            n = input("I'm thinking of a 3 digit number... Guess the number: ")
+            if n.isnumeric():
+               n = int(n)
+               n = check_num(n)
+               break
+       
     #if player guess right on first try
     if (n == num):   
         print("Great! You guessed the number in just 1 try! You're a Mastermind!") 
@@ -67,14 +77,34 @@ while True:
                     print(k, end=' ') 
                 print('\n') 
                 print('\n') 
-                n = int(input("Enter your next choice of numbers: ")) 
-                n = check_num(n)
+                n = input("Enter your next choice of numbers: ")
+                if n.isnumeric():
+                    n = int(n)
+                    n = check_num(n)
+                else:
+                    while(n.isnumeric() == False):
+                        print("You did not enter a 3 digit number try again")
+                        n = input("I'm thinking of a 3 digit number... Guess the number: ")
+                        if n.isnumeric():
+                            n = int(n)
+                            n = check_num(n)
+                            break
                 
             # when none of the digits are guessed correctly. 
             elif (count == 0):   
                 print("None of the numbers in your input match.") 
-                n = int(input("Enter your next choice of numbers: "))
-                n = check_num(n)
+                n = input("Enter your next choice of numbers: ")
+                if n.isnumeric():
+                    n = int(n)
+                    n = check_num(n)
+                else:
+                    while(n.isnumeric() == False):
+                        print("You did not enter a 3 digit number try again")
+                        n = input("I'm thinking of a 3 digit number... Guess the number: ")
+                        if n.isnumeric():
+                            n = int(n)
+                            n = check_num(n)
+                            break
       
         # condition for equality. 
         if n == num:   
@@ -89,3 +119,4 @@ while True:
             if play_again == "n" or play_again == "N":
                 print("Thanks for playing!")
                 break
+
